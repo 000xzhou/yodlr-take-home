@@ -1,0 +1,51 @@
+.closebtn {
+  color: red;
+  padding-inline-start: 1rem;
+}
+.activebtn {
+  color: #3adb76;
+}
+
+body {
+  background-image: url("https://images.rawpixel.com/image_social_landscape/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjU0NmJhdGNoMy1teW50LTM0LWJhZGdld2F0ZXJjb2xvcl8xLmpwZw.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  margin-block: 1rem;
+}
+
+.hero-full-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button-group-flex {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+@media (max-width: 40em) {
+  /* … */
+  .button-group-flex {
+    flex-direction: column;
+    gap: 0rem;
+  }
+}
+
+main h1 {
+  text-align: center;
+}
+
+.form-container {
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(254, 254, 254, 0.8);
+  padding: 20px;
+  margin: auto;
+}

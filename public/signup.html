@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset=utf-8>
-  <title>Yodlr Registration Portal</title>
-</head>
-<body>
-  <h1>Yodlr Registration Portal</h1>
-  <form>
-    Email: <input type="email" name="email"></br>
-    <button type="submit">Submit</button>
-  </form>
-  <p>
-    <a href="/admin.html">Admin Page</a>
-  </p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Yodlr Registration Portal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="grid-container">
+      <div>
+        <a class="button" href="/">Go Back</a>
+      </div>
+
+      <h1>Yodlr Registration Portal</h1>
+
+      <div class="form-container">
+        <form id="registration-form">
+          <label for="email">Email: </label
+          ><input required type="email" name="email" id="email" />
+
+          <label for="fn">First Name: </label
+          ><input required type="text" name="fn" id="fn" />
+
+          <label for="ln">Last Name: </label>
+          <input required type="text" name="ln" id="ln" />
+
+          <button type="submit" class="primary button expanded success">
+            Register
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <script src="./js/signup.js"></script>
+  </body>
 </html>
